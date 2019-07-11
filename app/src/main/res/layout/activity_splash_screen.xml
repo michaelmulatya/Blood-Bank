@@ -37,6 +37,7 @@
         android:layout_marginBottom="@dimen/splash_app_version_margin_bottom"
         android:textColor="#222222"
         android:textSize="@dimen/splash_app_version_text_size"
-        android:textStyle="bold"
-        tools:text="V 0.0.1 BETA"/>
+        android:text="@string/company_name"      />
+<!--        tools:text="V 0.0.1 BETA"-->
+       />
 </RelativeLayout>

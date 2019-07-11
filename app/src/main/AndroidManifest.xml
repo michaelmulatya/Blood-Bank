@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.udacity.nanodegree.blooddonation">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,6 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".ui.home.view.HomeActivity"
             android:screenOrientation="portrait" />
@@ -24,6 +26,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -59,7 +62,10 @@
             android:parentActivityName=".ui.home.view.HomeActivity"
             android:screenOrientation="portrait" />
 
+
+<!--        //incase of error https://medium.com/android-school/firebaseinstanceidservice-is-deprecated-50651f17a148-->
         <service
+
             android:name=".fcm.BloodDonationMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>

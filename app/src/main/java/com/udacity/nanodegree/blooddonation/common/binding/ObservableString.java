@@ -1,7 +1,7 @@
 package com.udacity.nanodegree.blooddonation.common.binding;
 
-import android.databinding.BaseObservable;
-import android.databinding.BindingConversion;
+import androidx.databinding.BaseObservable;
+import androidx.databinding.BindingConversion;
 
 import java.io.Serializable;
 

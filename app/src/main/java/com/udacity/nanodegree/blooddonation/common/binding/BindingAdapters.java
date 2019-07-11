@@ -1,11 +1,11 @@
 package com.udacity.nanodegree.blooddonation.common.binding;
 
-import android.databinding.BindingAdapter;
-import android.databinding.ObservableBoolean;
-import android.support.v4.util.Pair;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.ObservableBoolean;
+import androidx.core.util.Pair;
 import android.view.View;
 import android.widget.*;
-import com.goodiebag.pinview.Pinview;
+
 import com.udacity.nanodegree.blooddonation.R;
 
 /**

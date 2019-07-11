@@ -24,7 +24,7 @@
       android:layout_height="match_parent"
       >
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_registration"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -69,12 +69,13 @@
           android:layout_marginStart="@dimen/dp_32"
           android:paddingBottom="@dimen/dp_16"
           android:paddingTop="@dimen/dp_16"
-          app:ccp_defaultNameCode="IN"
+          app:ccp_defaultNameCode="KE"
           app:ccp_enableHint="false"
           app:ccp_enablePhoneAutoFormatter="true"
           app:ccp_hideNameCode="true"
-          app:ccp_showFlag="false"
+          app:ccp_showFlag="true"
           app:ccp_textSize="@dimen/sp_16"
+          app:ccp_countryPreference="KE,UG,TZ"
           app:layout_constraintBottom_toBottomOf="@+id/et_phone_number"
           app:layout_constraintEnd_toStartOf="@+id/et_phone_number"
           app:layout_constraintHorizontal_bias="0.5"
@@ -144,9 +145,9 @@
             style="@style/Widget.AppCompat.ProgressBar"
             />
       </RelativeLayout>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_verification"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -311,6 +312,6 @@
             style="@style/Widget.AppCompat.ProgressBar"
             />
       </RelativeLayout>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
   </FrameLayout>
 </layout>

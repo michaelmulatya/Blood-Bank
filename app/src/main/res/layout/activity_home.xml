@@ -9,7 +9,7 @@
             type="com.udacity.nanodegree.blooddonation.ui.home.HomeActivityContract.Presenter" />
     </data>
 
-    <android.support.design.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#efefef"
@@ -34,5 +34,5 @@
             android:visibility="gone"
             tools:visibility="visible" />
 
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

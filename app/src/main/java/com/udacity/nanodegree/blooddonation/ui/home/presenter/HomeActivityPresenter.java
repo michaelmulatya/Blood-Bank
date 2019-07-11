@@ -1,7 +1,10 @@
 package com.udacity.nanodegree.blooddonation.ui.home.presenter;
 
-import android.support.annotation.NonNull;
-import android.support.v4.util.ArrayMap;
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+import androidx.collection.ArrayMap;
+//import androidx.core.util.ArrayMap;
+
 
 import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.auth.FirebaseAuth;

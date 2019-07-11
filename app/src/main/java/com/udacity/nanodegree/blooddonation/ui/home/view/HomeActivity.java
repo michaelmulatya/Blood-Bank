@@ -1,15 +1,19 @@
 package com.udacity.nanodegree.blooddonation.ui.home.view;
 
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.v4.app.FragmentManager;
+import androidx.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+//import android.support.annotation.NonNull;
+//import android.support.annotation.Nullable;
+//import android.support.design.widget.BottomSheetBehavior;
+//import androidx.core.app.FragmentManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -255,6 +259,7 @@ public class HomeActivity extends BaseActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
         RequestDialogFragment requestDialogFragment = RequestDialogFragment.getInstance(user, location);
         requestDialogFragment.show(fragmentManager, "request_dialog");
+
     }
 
     @Override

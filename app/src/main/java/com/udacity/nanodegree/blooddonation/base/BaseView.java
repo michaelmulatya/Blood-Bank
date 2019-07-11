@@ -1,6 +1,7 @@
 package com.udacity.nanodegree.blooddonation.base;
 
-import android.support.annotation.StringRes;
+//import android.support.annotation.StringRes;
+import androidx.annotation.StringRes;
 
 public interface BaseView {
 

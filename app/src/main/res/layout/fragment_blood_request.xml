@@ -32,7 +32,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_16"
@@ -59,7 +59,7 @@
                 android:visibility="@{requestDetails.requestType.get().trim().equalsIgnoreCase(String.valueOf(0)) ? View.VISIBLE : View.GONE}"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dp_16"
@@ -80,7 +80,7 @@
                     tools:listitem="@layout/support_simple_spinner_dropdown_item" />
             </LinearLayout>
 
-            <android.support.v7.widget.AppCompatEditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/et_purpose"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
                 android:text="@{requestDetails.purpose}"
                 app:binding="@{requestDetails.purpose}" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_location_picker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

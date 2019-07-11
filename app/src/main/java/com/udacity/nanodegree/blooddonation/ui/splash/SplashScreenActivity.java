@@ -5,10 +5,13 @@ import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
+//import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.udacity.nanodegree.blooddonation.R;
 import com.udacity.nanodegree.blooddonation.base.BaseActivity;
@@ -33,8 +36,10 @@ public class SplashScreenActivity extends BaseActivity {
     private Runnable runnable = new Runnable() {
         @Override
         public void run() {
+            FirebaseApp.initializeApp(getApplicationContext());
             if (!isFinishing()) {
                 Intent intent;
+
                 if (FirebaseAuth.getInstance().getCurrentUser() == null) {
                     intent = new Intent(SplashScreenActivity.this, UserLoginActivity.class);
                 } else {
@@ -60,6 +65,7 @@ public class SplashScreenActivity extends BaseActivity {
         mAppVersionView.setText(AppVersionUtil.getAppVersion(this));
 
         mDelayHandler.postDelayed(runnable, SPLASH_DELAY);
+        FirebaseApp.initializeApp(this);
 
         startAnimation();
     }

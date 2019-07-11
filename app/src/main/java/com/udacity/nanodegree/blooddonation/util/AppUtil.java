@@ -1,8 +1,9 @@
 package com.udacity.nanodegree.blooddonation.util;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-
+//import androidx.core.app.Fragment;
+//import androidx.core.app.FragmentManager;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 /**
  * Created by riteshksingh on Apr, 2018
  */

@@ -1,11 +1,10 @@
 package com.udacity.nanodegree.blooddonation.ui.login;
 
-import android.databinding.ObservableField;
+import androidx.databinding.ObservableField;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import com.goodiebag.pinview.Pinview;
-import timber.log.Timber;
 
 /**
  * Created by riteshksingh on Apr, 2018

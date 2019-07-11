@@ -1,15 +1,19 @@
 package com.udacity.nanodegree.blooddonation.base;
 
 import android.content.Intent;
-import android.databinding.ViewDataBinding;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import com.google.android.material.snackbar.Snackbar;
+
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.core.content.ContextCompat;
+import androidx.databinding.ViewDataBinding;
+
 import com.google.firebase.auth.FirebaseAuth;
+import com.udacity.nanodegree.blooddonation.R;
 import com.udacity.nanodegree.blooddonation.ui.login.view.UserLoginActivity;
 
 /**
@@ -36,7 +40,7 @@ abstract public class BaseActivity extends AppCompatActivity {
     Snackbar snackBar =
         Snackbar.make(view, message, Snackbar.LENGTH_SHORT);
     View sbView = snackBar.getView();
-    TextView textView = sbView.findViewById(android.support.design.R.id.snackbar_text);
+    TextView textView = sbView.findViewById(R.id.snackbar_text);
     textView.setTextColor(ContextCompat.getColor(this, android.R.color.white));
     snackBar.show();
   }
