@@ -2,7 +2,7 @@
 
 
 ---
-
+This is a project  forked from https://github.com/UdacityAndroidDevScholarship/blood-donation and converted to work on androidx
 ---
 ## How the app will work?
  * This app keeps a list of voluntary donors.
